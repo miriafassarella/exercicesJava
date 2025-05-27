@@ -1,0 +1,12 @@
+public class ConversaoIntParaLong {
+
+    public static void main(String[] args) {
+	int y = 102344;
+	
+	long x = y; //conversão automatica, já que o int cabe dentro do long.
+
+
+
+    }
+
+}
