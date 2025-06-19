@@ -6,21 +6,28 @@ public class ControlePesoAeronave {
 
 	Scanner entrada = new Scanner(System.in);
 
-	System.out.print("Peso máximo da aeronave: ");
+	System.out.print("Peso máximo da aéronave: ");
 	int pesoMaximo = entrada.nextInt();
-
-	System.out.print("Quantidade de passageiros: ");
-	int totalPassageiros = entrada.nextInt();
 
 	int pesoTotalPassageiros = 0;
 
-	for (int passageiroAtual = 1; passageiroAtual <= totalPassageiros; passageiroAtual++) {
+	while (true) {
+	System.out.print("Peso do passageiro: ");
+	int pesoPassageiro = entrada.nextInt();
+	
+	
 
-		System.out.printf("Peso do passageiro: %d kg%n", passageiroAtual);
-		int pesoPassageiro = entrada.nextInt();
+	if(pesoTotalPassageiros + pesoPassageiro > pesoMaximo){
+		
+		continue;
+	}else {
+	pesoTotalPassageiros += pesoPassageiro;
 
-		pesoTotalPassageiros += pesoPassageiro;
-	}
+	}	
+
+}
+
+
 
 	
 	System.out.printf("Peso máximo da aéronave: %d kg%n", pesoMaximo);
@@ -32,7 +39,4 @@ public class ControlePesoAeronave {
 
 
     }
-
-
-
 }
