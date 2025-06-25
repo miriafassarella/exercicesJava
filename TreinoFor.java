@@ -10,19 +10,29 @@ public class TreinoFor {
 
 	System.out.print("Digite uma palavra: ");
 	String palavra = entrada.nextLine();
+	
+
+	int j = 0;
 
 	String novaString = "";
 
-	for (int i = palavra.length(); i <= palavra.length(); i--) {
+	for (int i = palavra.length() - 1; i >= 0; i--) {
 		
-		novaString += palavra.charAt(i);
-
+		if (palavra.charAt(i) == palavra.charAt(j)){
+			char letra = palavra.charAt(j);
+			novaString += letra;
+			j++;
+		}
+			
 	}
 	
+
 	
-	if (palavra == novaString) {
+	if (palavra.equalsIgnoreCase(novaString)) {
 
 	    System.out.println("\"" + palavra + "\"" + " é um polindromo!");
+	}else {
+	    System.out.println("\"" + palavra + "\"" + " não é um polindromo!");
 	}	 
 
 }
