@@ -10,14 +10,22 @@ public class TestReferencias {
 
 	Carro meuCarro = new Carro(); //meuCarro é apenas o nome da variável que faz referencia ao objeto.
 	meuCarro.proprietario = pessoa1;
+	meuCarro.modelo = "Civic";
+	meuCarro.ano = 2017;
 
 	Carro seuCarro = new Carro();
 	seuCarro.proprietario = pessoa1;
 	seuCarro.proprietario.nome = "João";
+	seuCarro.modelo = "Infiniti";
+	seuCarro.ano = 2022;
 
 
-	System.out.printf("Proprietario do meu carro: %s%n", meuCarro.proprietario.nome);
-	System.out.printf("Proprietario do seu carro: %s%n",seuCarro.proprietario.nome);
+	meuCarro.calcularValorRevenda();
+	seuCarro.calcularValorRevenda();
+
+
+	//System.out.printf("Proprietario do meu carro: %s%n", meuCarro.proprietario.nome);
+	//System.out.printf("Proprietario do seu carro: %s%n",seuCarro.proprietario.nome);
 
 
     }
