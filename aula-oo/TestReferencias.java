@@ -19,9 +19,13 @@ public class TestReferencias {
 	seuCarro.modelo = "Infiniti";
 	seuCarro.ano = 2022;
 
+	int anoFabricacao = meuCarro.afficherAno();
 
-	meuCarro.calcularValorRevenda();
-	seuCarro.calcularValorRevenda();
+
+	//meuCarro.calcularValorRevenda();
+	//seuCarro.calcularValorRevenda();
+	System.out.printf("Ano de fabricação do carro : %s%n", meuCarro.modelo);
+	System.out.print(anoFabricacao);
 
 
 	//System.out.printf("Proprietario do meu carro: %s%n", meuCarro.proprietario.nome);

@@ -15,5 +15,10 @@ public class Carro {
 	System.out.printf("Calcular valor revenda do carro: %s %d%n", modelo, ano);
 
    }
+
+   int afficherAno() {
+
+	return this.ano;
+   }
     
 }
