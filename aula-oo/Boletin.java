@@ -1,5 +1,7 @@
 public class Boletin {
 
+    String nomeAluno;
+
     double matematica;
     double portugues;
     double historia;
