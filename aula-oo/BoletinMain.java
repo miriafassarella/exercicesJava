@@ -2,22 +2,25 @@ public class BoletinMain {
 
     public static void main(String[] args) {
 
-	
-
-
-
-	
-
 	Aluno aluno = new Aluno();
+
+	
+	Notas nota1 = new Notas();
+	nota1.matematica = 5;
+	nota1.portugues = 4;
+	nota1.historia = 7;
+	nota1.nomeAluno = "Miriã";	
+
+	Notas nota2 = new Notas();
+	nota2.matematica = 8;
+	nota2.portugues = 9;
+	nota2.historia = 10;
+	nota2.nomeAluno = "Adriano";	
 	
 	
 
-	//Aluno aluno2 = new Aluno();
-	
-	
-
-	Boletin media1 = aluno.mediaDeNotas("Miria", 4.5, 6, 7);
-	Boletin media2 = aluno.mediaDeNotas("Adriano", 5, 4, 2.5);
+	Boletin media1 = aluno.mediaDeNotas(nota1);
+	Boletin media2 = aluno.mediaDeNotas(nota2);
 
 	if (media1.mediaBaixa()) {
 	    

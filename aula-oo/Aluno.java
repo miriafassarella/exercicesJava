@@ -1,27 +1,21 @@
 public class Aluno {
 
    
-    
-    
-    
-    
+     Boletin mediaDeNotas(Notas notas) {
 
+	Boletin boletim = new Boletin();
 
-    Boletin mediaDeNotas( String nomeAluno, double notasMatematica, double notasPortugues, double notasHistoria) {
-
-	Boletin notas = new Boletin();
-
-	notas.nomeAluno = nomeAluno;
-	notas.matematica = notasMatematica;
-	notas.portugues = notasPortugues;
-	notas.historia = notasHistoria;
+	boletim.nomeAluno = notas.nomeAluno;
+	boletim.matematica = notas.matematica;
+	boletim.portugues = notas.portugues;
+	boletim.historia = notas.historia;
 
 	
-	 notas.resultado = (notas.matematica + notas.portugues + notas.historia) / 3; 
+	 boletim.resultado = (boletim.matematica + boletim.portugues + boletim.historia) / 3; 
 
 	
 
-	return notas;
+	return boletim;
 
     }
 
