@@ -1,13 +1,18 @@
 public class FolhaPagamento {
 
-    double calcularSalario(ContratoTrabalho contratoTrabalho, double valorHoraNormal, double valorHoraExtra) {
+    double calcularSalario(ContratoTrabalho contratoTrabalho, double quantidadeHorasNormais, double quantidadeHorasExtras) {
 
 
-	double resultadoHorasNormais = contratoTrabalho.valorHoraNormal * valorHoraNormal;
-	double resultadoHorasExtras = contratoTrabalho.valorHoraExtra * valorHoraExtra;
+	double resultadoHorasNormais = contratoTrabalho.valorHoraNormal * quantidadeHorasNormais;
+	double resultadoHorasExtras = contratoTrabalho.valorHoraExtra * quantidadeHorasExtras;
+	double resultado = resultadoHorasNormais + resultadoHorasExtras;
+	
+	contratoTrabalho.calcularPorcentagem();
 
-	return resultadoHorasNormais + resultadoHorasExtras;
-
+	double resultadoTotal = contratoTrabalho.porcentagemFilhos > 0 ? (resultado * contratoTrabalho.porcentagemFilhos) + resultado : resultado;
+	
+	return resultadoTotal;
+	
 
     }
 

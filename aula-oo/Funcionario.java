@@ -4,4 +4,9 @@ public class Funcionario {
     int quantidadeFilhos;
 
 
+    boolean temFilhos() {
+	return quantidadeFilhos > 0;
+
+    }
+
 }
