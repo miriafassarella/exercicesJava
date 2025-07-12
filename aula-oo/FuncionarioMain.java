@@ -2,25 +2,22 @@ public class FuncionarioMain {
 
     public static void main(String[] args) {
 
-	Funcionario joao = new Funcionario();
-	//joao.quantidadeFilhos = 2;
-
-	ContratoTrabalho contrato = new ContratoTrabalho();
-	contrato.valorHoraNormal = 25.21;
-	contrato.valorHoraExtra = 27;
-	contrato.funcionario = joao;
+	Funcionario funcionario1 = new Funcionario();
+	funcionario1.quantidadeFilhos = 0;
+	funcionario1.nome = "Miria";
 
 	
+	ContratoTrabalho contrato = new ContratoTrabalho();
+	contrato.valorHoraExtra = 30;
+	contrato.valorHoraNormal = 25.21;
+	contrato.funcionario = funcionario1;
 
-	FolhaPagamento folhap = new FolhaPagamento();
+	FolhaPagamento pagamento = new FolhaPagamento();
+	//Holerite resultado = 
+	pagamento.calcularSalario(30, 5, contrato);
 
-	double resultadoPagamento = folhap.calcularSalario(contrato, 30, 15);
-
-
-	System.out.printf("Valor a pagar ao funcionario: %.2f%n", resultadoPagamento);
-
-
-
+	//System.out.print(resultado);
+	
     }
 
 

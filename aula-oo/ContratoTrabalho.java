@@ -1,20 +1,16 @@
 public class ContratoTrabalho {
 
    
-
-
     Funcionario funcionario;
 
     double valorHoraNormal;
 
     double valorHoraExtra;  
 
-    double porcentagemFilhos; 
+   
+	boolean porcentagemFilho() {
+	    return funcionario.temFilhos();
+	}
 
 
-   public void calcularPorcentagem() {
-	if(funcionario.temFilhos()) {
-	    porcentagemFilhos = 0.10;
-	}	
-    } 
-}
+  }
