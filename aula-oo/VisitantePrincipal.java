@@ -7,15 +7,8 @@ public class VisitantePrincipal {
 	novoVisitante.idade = 20;
 
 
-	if (novoVisitante.visitanteMaiorDeIdade()) {
-	    
-	    System.out.printf("Acesso não permitido para menores de %d anos !", Visitante.IDADE_MINIMA_ACESSO_IRRESTRITO);
-
-	}else {
-
-	     System.out.printf("Acesso liberado !");
-
-	}
+	CadastroPortaria cadastroPortaria = new CadastroPortaria();
+	cadastroPortaria.cadastrar(novoVisitante, 3);
 
 	/*A variável final é uma constante e não permite alteração*/
 
