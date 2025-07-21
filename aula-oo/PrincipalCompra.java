@@ -7,7 +7,7 @@ public class PrincipalCompra {
 
 	Produto produto = new Produto();
 	produto.nome = "Agua";
-	produto.precoUnitario = Integer.valueOf(5);
+	produto.precoUnitario = Double.valueOf(5.2);
 
 
 	carrinho.adicionarItem(produto, 4);

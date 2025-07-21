@@ -1,6 +1,6 @@
 public class Produto {
 
-    Integer precoUnitario;
+    Double precoUnitario;
     String nome;   
     
 }
