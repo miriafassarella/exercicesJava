@@ -7,12 +7,12 @@ public class PrincipalCompra {
 
 	Produto produto = new Produto();
 	produto.nome = "Agua";
-	produto.precoUnitario = 5;
+	produto.precoUnitario = Integer.valueOf(5);
 
 
-	carrinho.adicionarItem(produto, -4);
+	carrinho.adicionarItem(produto, 4);
 
-	System.out.println("Pedido gerado !");
+	System.out.println(produto.precoUnitario);
 
 
    }
