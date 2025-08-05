@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array{
 
     public static void main(String[] args) {
@@ -19,6 +21,9 @@ public class Array{
 	}
 
 	System.out.print("Média de notas: " + (soma / notas.length));
+	System.out.print(Arrays.toString(notas));
+
+	//Arrays.toString(notas); Transforma o array em uma string
     }
 
     
