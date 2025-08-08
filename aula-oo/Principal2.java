@@ -1,34 +1,31 @@
 import java.util.Arrays;
 
-public class Principal1 {
+public class Principal2 {
 
     public static void main(String[] args) {
 
-	/*Feito sozinha :)*/
-	
 	int[] numerosAtuais = {25, 11, 8, 46, 37, 14, 55};
 	int[] numerosNovos = new int[numerosAtuais.length - 1];
 
 	System.out.println(Arrays.toString(numerosAtuais));
 	System.out.println(Arrays.toString(numerosNovos));
 
-	int numero = 14;
-	int j = 0;
+	int indiceExclusao = 3;
 
-	for (int i = 0; i < numerosAtuais.length; i++) {
-		
-				
-	   	if(numero != numerosAtuais[i]) {
-					    
-			    numerosNovos[j] = numerosAtuais[i];
-			    j++;
-		}	    
-	}
+	System.arraycopy(numerosAtuais, 0, numerosNovos, 0, indiceExclusao);
+	/*System.arraycopy(numerosAtuais, indiceExclusao + 1, numerosNovos, indiceExclusao,
+numerosAtuais.length - (indiceExclusao + 1));*/
+
+	System.arraycopy(numerosAtuais, indiceExclusao + 1, numerosNovos, indiceExclusao,
+numerosNovos.length - indiceExclusao);
+
 
 	System.out.println(Arrays.toString(numerosAtuais));
 	System.out.println(Arrays.toString(numerosNovos));
 
 
 
+
     }
+
 }
