@@ -6,4 +6,19 @@ public class Turma {
     Aluno[] alunos;
 
 
+	void imprimirListaDeAluno() {
+	    
+	    for (Aluno aluno : alunos) {
+
+		if (aluno != null) {
+		    System.out.printf("%s (%d anos)%n", aluno.nome, aluno.idade);
+		
+		}
+
+
+	    }
+
+
+	}
+
 }
