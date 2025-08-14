@@ -11,16 +11,22 @@ public class Cardapio {
     }
 
     void removerItem(int indice) {
-        // TODO implementar exclusão de item do cardápio da posição informada
-    }
+	ItemCardapio[] itensNovos = new ItemCardapio[this.itens.length - 1];
+        System.arraycopy(this.itens, 0, itensNovos, 0, indice);
+	System.arraycopy(this.itens, indice + 1, itensNovos, indice, this.itens.length - (indice + 1));
+
+	this.itens = itensNovos;
+
+	
+	}
 
     void imprimirItensCardapio(double precoMinimo, double precoMaximo) {
 
 
 	for (int i = 0; i < itens.length; i++) {
 	
-		if (itens[i] != null) {
-		     System.out.printf("O item com a seguinte descrição:  %s custa %.2f !%n", itens[i].descricao, itens[i].preco);
+		if (itens[i] != null && itens[i].preco > precoMinimo && itens[i].preco < precoMaximo) {
+		     System.out.printf("Descrição:  %s | Preço: %.2f !%n", itens[i].descricao, itens[i].preco);
 
 		}
 	

@@ -19,9 +19,8 @@ public static void main(String[] args) {
         cardapio.adicionarItem(item2);
         cardapio.adicionarItem(item3);
 
-        cardapio.imprimirItensCardapio(80, 150);
 
-        cardapio.removerItem(0);
+        cardapio.removerItem(1);
         System.out.println("---");
 
         cardapio.imprimirItensCardapio(0, 150);
