@@ -20,7 +20,7 @@ public static void main(String[] args) {
         cardapio.adicionarItem(item3);
 
 
-        cardapio.removerItem(1);
+        cardapio.removerItem(0);
         System.out.println("---");
 
         cardapio.imprimirItensCardapio(0, 150);
