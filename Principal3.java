@@ -1,6 +1,6 @@
 public class Principal3 {
 
-public static void main(String[] args) {
+ public static void main(String[] args) {
         Cardapio cardapio = new Cardapio();
 
         ItemCardapio item1 = new ItemCardapio();
@@ -19,13 +19,13 @@ public static void main(String[] args) {
         cardapio.adicionarItem(item2);
         cardapio.adicionarItem(item3);
 
+        cardapio.imprimirItensCardapio(80, 150);
 
-        cardapio.removerItem(0);
+        cardapio.removerItem(2);
         System.out.println("---");
 
         cardapio.imprimirItensCardapio(0, 150);
     }
-
     
 
 
