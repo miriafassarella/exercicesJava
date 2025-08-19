@@ -32,6 +32,18 @@ public class Array2Dimencoes {
 	nomes[1][1] = "Matheus";
 	nomes[1][2] = "Milena";
 
+	for (int i = 0; i < nomes.length; i++) {
+		for (int j = 0; j < nomes[i].length; j++) {
+			 System.out.println(nomes[i][j]);
+		
+			 //System.out.println(Arrays.toString(nomes[i]));
+		}
+	   
+
+	}
+
+	
+
 	System.out.print(nomes[0][1]);
 
     }
