@@ -10,7 +10,17 @@ public class FaturaMain {
 
 	//String[] emailsCobranca = {"Aline@gmail.com", "Matheus@gmail.com"};
 
-	servicoDeCobranca.pagar(fatura, new String[]{"Aline@gmail.com"});
+
+	//se usarmos o varargs não precisamos instanciar o array, podemos passsar os elementos diretamente.
+	//servicoDeCobranca.pagar(fatura, "Aline@gmail.com", "matheus@gmail.com");
+
+	//não precisamos passar o parametro quando se refere a um varargs.
+	//ele precisa sempre ser o ultimo argumento.
+	servicoDeCobranca.pagar(fatura);
+
+	//servicoDeCobranca.pagar(fatura, new String[]{"Aline@gmail.com"});
+	//servicoDeCobranca.pagar(fatura, new String[0]);
+
 	//instanciando um array direto no parametro do método.
 
     }
