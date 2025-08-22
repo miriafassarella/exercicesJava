@@ -16,7 +16,7 @@ public class FaturaMain {
 
 	//não precisamos passar o parametro quando se refere a um varargs.
 	//ele precisa sempre ser o ultimo argumento.
-	servicoDeCobranca.pagar(fatura);
+	servicoDeCobranca.pagar(fatura, "miria@gmail.com", "Adriano@gmail.com", "Maggie@gmail.com");
 
 	//servicoDeCobranca.pagar(fatura, new String[]{"Aline@gmail.com"});
 	//servicoDeCobranca.pagar(fatura, new String[0]);
