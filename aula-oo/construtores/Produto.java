@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Produto {
 
      static final int QUANTIDADE_ESTOQUE_INICIAL = 100;
@@ -12,13 +14,23 @@ public class Produto {
 
      }
 
-     Produto(String nome, int quantidadeEstoque) {
+     Produto(String nome, int estoqueInicial) {
+	Objects.requireNonNull(nome, "Nome é obrigatório !");
+	
+	if (estoqueInicial < 0) {
+	
+	    throw new IllegalArgumentException("Estoque inicial não pode ser negativo !");
+
+	}
+
 	this.nome = nome;
 	this.quantidadeEstoque = quantidadeEstoque;
 
      }
 
      Produto(String nome) {
+	Objects.requireNonNull(nome, "Nome é obrigatório !");
+
 	System.out.println("Eu sou um contrutor da classe Produto");
 
 	this.nome = nome;
