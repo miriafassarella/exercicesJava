@@ -1,14 +1,17 @@
 public class Produto {
 
-     Produto() {
+     static final int QUANTIDADE_ESTOQUE_INICIAL = 100;
+	
+     String nome;
+     int quantidadeEstoque;
+
+     Produto(String nome) {
 	System.out.println("Eu sou um contrutor da classe Produto");
+
+	this.nome = nome;
+	this.quantidadeEstoque = QUANTIDADE_ESTOQUE_INICIAL;
     }
 
-	//Quando voce quer garantir um estado inicial dos objetos instanciados de uma classe.
-
-	//neste caso ele seria um método e não um construtor
-     /*void Produto() {
-	System.out.println("Eu sou um contrutor da classe Produto");
-    }*/
+	
 
 }
