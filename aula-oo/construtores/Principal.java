@@ -5,7 +5,7 @@ public class Principal {
 	Produto produto1 = new Produto("Picanha");
 	Produto produto2 = new Produto("Alcatra");
 
-	Produto produto3 = new Produto("Fraudinha", -2);
+	Produto produto3 = new Produto("Fraudinha", 45);
 	Produto produto4 = new Produto();
 
 	

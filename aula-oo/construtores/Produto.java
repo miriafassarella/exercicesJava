@@ -8,11 +8,13 @@ public class Produto {
      int quantidadeEstoque;
 
      Produto() {
+	this("Sem nome");// essa instrução tem que vir no início.
 
-	this.nome = "Sem nome";
-	this.quantidadeEstoque = QUANTIDADE_ESTOQUE_INICIAL;
+	}
 
-     }
+      Produto(String nome) {
+	this(nome, QUANTIDADE_ESTOQUE_INICIAL);
+    }
 
      Produto(String nome, int estoqueInicial) {
 	Objects.requireNonNull(nome, "Nome é obrigatório !");
@@ -27,16 +29,4 @@ public class Produto {
 	this.quantidadeEstoque = quantidadeEstoque;
 
      }
-
-     Produto(String nome) {
-	Objects.requireNonNull(nome, "Nome é obrigatório !");
-
-	System.out.println("Eu sou um contrutor da classe Produto");
-
-	this.nome = nome;
-	this.quantidadeEstoque = QUANTIDADE_ESTOQUE_INICIAL;
-    }
-
-	
-
 }
