@@ -17,6 +17,7 @@ public class Principal {
 
 	System.out.printf("Produto4 (nome) : %s | Produto4 (quantidade) : %d", produto4.nome, produto4.quantidadeEstoque);
 
+	System.out.print(produto1.codigo);
 
 
     }
