@@ -12,12 +12,13 @@ public class Produto {
      Produto() {
 	this("Sem nome"); 
 	//essa instrução tem que vir no início.
-	//this.codigo = "DDUI";  não posso inicializar aqui
+	//this.codigo = "DDUI"; não posso inicializar aqui
 
 	}
 
       Produto(String nome) {
 	this(nome, QUANTIDADE_ESTOQUE_INICIAL);
+	
     }
 
      Produto(String nome, int estoqueInicial) {
@@ -29,7 +30,7 @@ public class Produto {
 
 	}
 
-	this.nome = nome;
+	//this.nome = nome;
 	this.quantidadeEstoque = estoqueInicial;
 	
 	this.codigo = UUID.randomUUID().toString();
