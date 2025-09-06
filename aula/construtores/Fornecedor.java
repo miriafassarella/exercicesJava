@@ -2,13 +2,37 @@ class Produto {
 
     String nome;
     private double preco;
+    Fabricante fabricante;
+    Comprador comprador;
 
     public void imprimir() {
 
-	System.out.print(this.nome);
+	System.out.println(this.nome);
+	System.out.println(this.fabricante.nome);
     }
 
 }
+
+
+class Comprador {
+
+     String nome;
+     Comprador(String nome) {
+	this.nome = nome;
+     }
+
+     void imprimir() {
+
+	System.out.print(this.nome);
+}
+
+}
+
+class Fabricante {
+    String nome;
+    
+
+ }
 
 public class Fornecedor {
     //não podemos ter duas classes publicas em um mesmo arquivo
@@ -22,10 +46,16 @@ public class Fornecedor {
     
 	public static void main(String[] args) {
 
+	    Fabricante fab = new Fabricante();
+	    fab.nome = "Samsung";
+
 	    Produto produto = new Produto();
 	    produto.nome = "Cortador de gramas";
+	    produto.fabricante = fab;
+	    produto.comprador = new Comprador("Miria");
 
 	    produto.imprimir();
+	    produto.comprador.imprimir();
 
 	}
 
