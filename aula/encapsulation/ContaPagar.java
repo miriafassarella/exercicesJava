@@ -8,12 +8,21 @@ public class ContaPagar {
     private Fornecedor fornecedor;
 
     public void pagar() {
+
+	if (pago) {
+	   throw new IllegalArgumentException("La facture etait deja payee !");
+	}
 	this.pago = true;
 
     }
 
     public void cancelarPagamento() {
-	
+
+	if (!pago) {
+	   throw new IllegalArgumentException("La facture n'etait pas payee !");
+	}
+
+	this.pago = false;
     }
 
     public String getDescricao() {
@@ -30,7 +39,7 @@ public class ContaPagar {
 
     }
 
-    public boolean getPago() {
+    public boolean isPago() {
 	return pago;
 
     }
@@ -40,7 +49,7 @@ public class ContaPagar {
 
     }
 
-    public void setDescricao(String Descricao) {
+    public void setDescricao(String descricao) {
 	this.descricao = descricao;
 
     }
