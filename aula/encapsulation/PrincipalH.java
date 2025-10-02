@@ -3,9 +3,9 @@ public class PrincipalH {
 //Tell Don't Ask
 
     public static void main(String[] args) {
-	Horario horario = new Horario(10, 55);
+	Horario horario = new Horario(11, 54);
 
-	System.out.println(horario.formatar());
+	System.out.print(horario.formatar());
 
     }
 
