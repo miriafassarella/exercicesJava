@@ -1,3 +1,5 @@
+package com.miria.locacao;
+
 public class Veiculo {
 
     private String placa;
@@ -22,12 +24,12 @@ public class Veiculo {
 	this.placa = placa;
     }
 
-    public boolean isDisponivel() {
-	return disponivel;
+    public void isDisponivel(boolean disponivel) {
+	this.disponivel = disponivel;
     }
 
-    public void setDisponivel(boolean disponivel) {
-	this.disponivel = disponivel;
+    public boolean getDisponivel() {
+	return disponivel;
     }
 
     public GrupoVeiculo getGrupoVeiculo() {

@@ -1,3 +1,5 @@
+package com.miria.locacao;
+
 public class Locacao {
 
     private Veiculo veiculo;
@@ -12,7 +14,6 @@ public class Locacao {
 	this.quantidadeDiarias = quantidadeDiarias;
 
     }
-
 
     public Veiculo getVeiculo() {
 	return veiculo;
