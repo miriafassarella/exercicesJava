@@ -4,14 +4,17 @@ public class Agendamento {
 
     private String descricao;
 
+
     public Agendamento(Horario horario, String descricao){
-        this.horario = horario;
+        /*Aqui estamos criado a copia defenciva*/
+        this.horario = new Horario(horario.getHora(), horario.getMinuto());
         this.descricao = descricao;
 
     }
 
     public Horario getHorario() {
-        return horario;
+        /*Aqui estamos criado a copia defenciva*/
+        return new Horario(horario.getHora(), horario.getMinuto());
     }
 
     public String getDescricao() {
@@ -20,5 +23,9 @@ public class Agendamento {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getHorarioFormat() {
+        return horario.format();
     }
 }

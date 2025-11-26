@@ -9,6 +9,10 @@ public class Horario {
 
     }
 
+    public String format(){
+        return String.format("%dh:%dm", getHora(), getMinuto());
+    }
+
     public int getHora() {
         return hora;
     }
