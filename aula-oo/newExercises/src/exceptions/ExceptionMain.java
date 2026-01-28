@@ -4,9 +4,9 @@ public class ExceptionMain {
 
     public static void main(String[] args){
 
-        Exception exception = new Exception();
+        TestException testException = new TestException();
 
-        exception.division(3, 0);
+        testException.division(3, 0);
     }
 
 }

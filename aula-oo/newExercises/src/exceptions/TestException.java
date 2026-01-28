@@ -1,6 +1,6 @@
 package exceptions;
 
-public class Exception {
+public class TestException {
 
         int x;
         int y;
